@@ -1,0 +1,109 @@
+:root{
+    --color-tech:#47BCD4;
+    --color-popular:#5E76BF;
+    --color-design:#CD5B9F;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F8FC;
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    margin:25px;
+    align-items: center;
+    width: 20rem;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 34px 36px -14px #E9ECF9;
+}
+.article-image img{
+    width: 20rem;
+    height: 15rem;
+    border-radius: 10px 10px 0 0;
+}
+.article-info{
+    padding: 25px;
+}
+.category a{
+    padding: 2px 10px;
+    font-size: .875rem;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.category .tech{
+    background-color: var(--color-tech);
+}
+.category .popular{
+    background-color: var(--color-popular);
+}
+.category .design{
+    background-color: var(--color-design);
+}
+.blog-title{
+    margin: 10px auto;
+    font-size: 1.125rem;
+    color: #10182F;
+    font-weight: bold;
+}
+.blog-content{
+    color: #10182F;
+}
+.author{
+    display: flex;
+    align-items: center;
+    margin-top:40px ;
+}
+.author img{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.author span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.5;
+}
+.author-name{
+    font-weight: bold;
+    color: #10182F;
+}
+.blog-date{
+    font-size: 14px;
+    color: #545D7A;
+}
+@media (max-width:1069px) and (min-width:754px){
+    .container{
+        flex-direction: column;
+    }
+    .blog-container{
+        width: 45rem;
+        height: 15rem;
+        flex-direction: row;
+        margin: 25px auto;
+    }
+    .article-info {
+        padding: 0 25px;
+        margin: auto;
+    }
+    .article-image img{
+        border-radius: 10px 0px 0 10px;
+        position: relative;
+        bottom: -2px;
+    }
+}
