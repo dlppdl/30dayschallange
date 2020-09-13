@@ -9,6 +9,11 @@ body{
     align-items: center;
     font-family: 'Roboto', sans-serif;
 }
+h2{
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 28px;
+}
 .container{
     display: flex;
     flex-direction: column;
