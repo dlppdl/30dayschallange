@@ -1,0 +1,67 @@
+body{
+    font-family: monospace;
+    margin: 0;
+}
+.share{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.share svg{
+    width: 32px;
+    height: 32px;
+}
+.facebook{
+    background: #1977f3;
+}
+.twitter{
+    background:#03A9F4;
+}
+.linkedin{
+    background: #0077b5;
+}
+.email{
+    background: #000;
+}
+.instagram{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+} 
+.share path{
+    fill: #fff;
+}
+.share svg{
+    padding: 10px;
+}
+.icon{
+    width: 52px;
+    height: 52px; 
+}
+.share div{
+    display: flex;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    overflow: hidden;
+    transition: width 150ms ease-out;
+}
+.share div:hover{
+    width: 150px;
+}
+.share .text{
+    margin:auto 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+@media (max-width:400px){
+    .share{
+        flex-direction: row;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .share div:hover{
+        width: 52px;
+    }
+}
