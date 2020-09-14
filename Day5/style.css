@@ -9,6 +9,10 @@ body{
     justify-content: center;
     height: 100vh;
 }
+.share a{
+    display: flex;
+    text-decoration: none;
+}
 .share svg{
     width: 32px;
     height: 32px;
