@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    margin: auto;
+    border: 1px solid #aaa;
+    line-height: 1.5;
+    padding: 1rem;
+}
+.header{
+    text-align: center;
+}
+.heading{
+    font-size: 3rem;
+}
+.head-image{
+    margin: 1rem -1rem;
+}
+.head-image img{
+    width: 100%;
+    height: auto;
+}
+.part{
+    padding: 1rem;
+}
+.sub-heading{
+    font-size: 2rem;
+}
+.part p{
+    font-size: 20px;
+}
+@media (max-width:576px){
+    .container{
+        width: 100%;
+    }
+    .heading{
+        font-size: 2.25rem;
+    }
+    .sub-heading{
+        font-size: 1.6875rem;
+    }
+    .part p{
+        font-size: 1.125rem;
+    }
+}
+@media (min-width:576px){
+    .container{
+        width: 540px;
+    }
+}
+@media (min-width:768px){
+    .container{
+        width: 720px;
+    }
+}
+@media (min-width:992px){
+    .container{
+        width: 960px;
+    }
+}
+.arrow-page{
+    float: right;
+}
+.arrow{
+    position: fixed;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #11ff11;
+    bottom: 2.5rem;
+    right: 2.5rem;
+}
+.arrow path{
+    fill: #11ff11;
+}
+.arrow svg{
+    width: 100%;
+    padding: 10px;
+}
+.arrow:hover{
+    border: 0;
+    background: #11ff11;
+    box-shadow: 0px 0px 10px 0px #11ff11;
+    transform: scale(1.2);
+}
+.arrow:hover path{
+    fill: #fff;
+}
