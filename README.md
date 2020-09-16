@@ -8,3 +8,4 @@
 | Day 4  | [Photography Post](https://dlppdl.github.io/100dayschallange/Day4/)|
 | Day 5  | [Sticky Social Share](https://dlppdl.github.io/100dayschallange/Day5/)|
 | Day 6  | [Blog Page](https://dlppdl.github.io/100dayschallange/Day6/)|
+| Day 7  | [Footer Design](https://dlppdl/github.io/100dayschallange/Day7)
