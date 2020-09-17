@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: teal;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.modal{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #555;
+    width: 455px;
+    padding: 26px 40px;
+}
+.text-center{
+    text-align: center;
+}
+h1{
+    margin-top: 0;
+    font-size: 30px;
+}
+.text-blue{
+    color: blue;
+    border-right: 3px solid #656565;
+    font-size: 24px;
+    margin: 5px;
+    padding-right: 5px;
+}
+.vote{
+    font-size: 18px;
+}
+.rating{
+    margin:1rem -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: 2px solid #BBC4C7;
+    border-bottom: 2px solid #BBC4C7;
+}
+.rating ul{
+    width: 100%;
+    padding-inline-start: 0 ;
+}
+li{
+    width: 100%;
+    display: flex;
+    list-style:none;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.form div{
+    margin-top: 1rem;
+}
+.label, .input{
+    width: 100%;
+}
+.label{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 200;
+    margin: 5px auto;
+}
+.input{
+    height:2rem;
+    padding: 1rem;
+    border: 0;
+    border-bottom: 2px solid #656565;
+}
+#review{
+    height: 5rem;
+}
+.input::placeholder{
+    color: #353437 ;
+    font-size: 16px;
+}
+.term{
+    font-size: 10px;
+}
+.button{
+    padding:.5rem 1rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin: 5px;
+    background: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.submit{
+    background-color: blue;
+    color: white;
+}
+.fa-star, .fa-star-half-o{
+    color: #E68E00;
+}
+.fa-star-o{
+    color: #BBC4C7;
+}
