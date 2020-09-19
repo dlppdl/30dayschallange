@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E8EFFC;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.25rem 4.5rem;
+    border-radius: 5px;
+}
+.color-blue{
+    color: #304FFE;
+}
+a{
+    text-decoration: none;
+}
+
+.upload{
+    width: 100%;
+    padding: 1rem;
+    border: 2px dashed #777EFF;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+.material-icons{
+    font-size: 4rem;
+}
+.title{
+    margin-block-start: 0;
+    font-size: 1.5rem;
+}
+.button{
+    width: 110%;
+    margin: 1rem 0 0;
+    border: 0;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: #304FFE;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.button:focus{
+    outline: 0;
+    box-shadow: 0 0 0 3px #fff,
+                0 0 0 6px #304FFE;
+
+}
