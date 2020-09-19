@@ -11,3 +11,4 @@
 | Day 7  | [Footer Design](https://dlppdl.github.io/100dayschallange/Day7)|
 | Day 8  | [Review Modal](https://dlppdl.github.io/100dayschallange/Day8)|
 | Day 9  | [Profile Card](https://dlppdl.github.io/100dayschallange/Day9)|
+| Day 10  | [Upload File](https://dlppdl.github.io/100dayschallange/Day10)|
