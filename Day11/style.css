@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E8EFFC;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.25rem;
+}
+.container{
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    width: 5rem;
+}
+.image img{
+    width: 5rem;
+    border-radius: 50%;
+}
+.inner-container{
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 474px;
+}
+.heading{
+    text-align: center;
+    font-weight: 500;
+    background-color: #E3004F;
+    border-radius: 10px 10px 0 0;
+    line-height: 100px;
+    color: #fff;
+}
+.heading::before,.heading::after{
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    background-color: #E3004F;
+    position: absolute;
+    z-index: -1;
+}
+.heading::before{
+    transform: skew(0deg,30deg);
+    left: 50%;
+}
+.heading::after{
+    transform: skew(0deg,-30deg);
+    right: 50%;
+}
+.item{
+    padding: 2.75rem;
+    display: flex;
+    justify-content: space-between;
+    color: #505760;
+}
+.number{
+    font-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.inbox{
+    background-color: #FF2BA3;
+}
+.calender{
+    background-color: #9013FE;
+}
+.tasks{
+    background-color: #00D0E6;
+}
