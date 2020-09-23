@@ -16,6 +16,8 @@ body{
     line-height: 130%;
     display: grid;
     place-items: center;
+    background: url(./img/bg-pattern-top-mobile.svg) top left no-repeat,
+                url(./img/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
 .container{
     padding: 1rem;
@@ -92,4 +94,55 @@ body{
 .attribution a {
     color: #3e52a3;
     text-decoration: none;
+}
+@media screen and (min-width:1036px){
+    body{
+        background: url(./img/bg-pattern-top-desktop.svg) top left no-repeat,
+                    url(./img/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+    .container{
+        min-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+    .customer{
+        text-align: left;
+    }
+    .heading{
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+    .rating{
+        position: relative;
+        top: 3rem;
+    }
+    .rating-box{
+        flex-direction: row;
+        padding: 1rem;
+        position: relative;
+    }
+    .rating-box:nth-child(2){
+        left: 1rem;
+    }
+    .rating-box:nth-child(3){
+        left: 2rem;
+    }
+    .rate-for{
+        margin: 0 1rem;
+    }
+    .review{
+        grid-column: 1/3;
+        display: grid;
+        grid-column-gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .review-box:nth-child(2){
+        position: relative;
+        top: 1rem;
+    }
+    .review-box:nth-child(3){
+        position: relative;
+        top: 2rem;
+    }
 }
