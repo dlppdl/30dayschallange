@@ -21,3 +21,4 @@
 | Day 11  | [User Profile](https://dlppdl.github.io/100dayschallange/Day11)|
 | Day 12  | [Another 404 Error Page](https://dlppdl.github.io/100dayschallange/Day12)|
 | Day 13  | [Newsletter Page](https://dlppdl.github.io/100dayschallange/Day13)|
+| Day 14  | [Social Proof Section](https://dlppdl.github.io/100dayschallange/Day14)|

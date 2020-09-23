@@ -4,7 +4,7 @@
     --dark-grayish-magenta: hsl(303, 10%, 53%);
     --light-grayish-magenta: hsl(300, 24%, 96%);
     --white: hsl(0, 0%, 100%);
-
+    
     --bg-top: url(./img/bg-pattern-top-mobile.svg) top left no-repeat;
     --bg-bottom: url(./img/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
