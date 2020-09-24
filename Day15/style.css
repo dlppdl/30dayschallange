@@ -77,6 +77,12 @@ body{
     display: flex;
     justify-content: center;
     border-radius: 10px;
+    outline:none;
+    box-shadow: 0 0 5px var(--blue);
+}
+.button:focus{
+    box-shadow: 0 0 0 3px #fff,
+                0 0 0 5px var(--yellow);
 }
 .why{
     background-color: var(--light-cyan);
