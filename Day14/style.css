@@ -19,6 +19,7 @@ body{
     line-height: 130%;
     display: grid;
     place-items: center;
+    height: 100vh;
     background: var(--bg-top), var(--bg-bottom);
 }
 .container{
