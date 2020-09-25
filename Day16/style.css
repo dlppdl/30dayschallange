@@ -67,6 +67,13 @@ body{
     border: 1px solid #fff;
     color: #fff;
 }
+.attribution {
+    font-size: 10px;
+}
+.attribution a {
+    color: #3e52a3;
+    text-decoration: none;
+}
 @media screen and (max-width:1050px) and (min-width:950px){
     .register{
         margin-top: 0;
