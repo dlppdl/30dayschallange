@@ -23,3 +23,4 @@
 | Day 13  | [Newsletter Page](https://dlppdl.github.io/100dayschallange/Day13)|
 | Day 14  | [Social Proof Section](https://dlppdl.github.io/100dayschallange/Day14)|
 | Day 15  | [Single Price Grid Component](https://dlppdl.github.io/100dayschallange/Day15)|
+| Day 16  | [Huddle landing page](https://dlppdl.github.io/100dayschallange/Day16)|
