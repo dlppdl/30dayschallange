@@ -1,0 +1,123 @@
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--light-gray);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding:1rem;
+    margin:auto;
+}
+.head{
+    margin-top: 2rem;
+    text-align: center;
+}
+.title{
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-bottom: 0;
+    line-height:3rem;
+    color: var(--dark-blue);
+}
+.highlight{
+    font-weight: 600;
+    margin-top: 0;
+}
+.box-title{
+    color:var(--dark-blue);
+}
+.description{
+    color: var(--grayish-blue);
+    line-height: 145%;
+    letter-spacing: 0.4px;
+}
+.head .description{
+    color: rgba(0,0,0,0.6);
+}
+.main{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-gap: 1.5rem;
+    margin: 4rem auto;
+    place-items: center;
+}
+.main > div{
+    border-radius: .75rem;
+    box-shadow: 0 0 5px #aaa;
+    padding: 2rem;
+    width: 340px;
+    border-top: 0.25rem solid;
+}
+.main .supervisor{
+    border-top-color: var(--cyan);
+}
+.main .team-builder{
+    border-top-color: var(--red);
+}
+.main .karma{
+    border-top-color: var(--orange);
+}
+.main .calculator{
+    border-top-color: var(--blue);
+}
+.icon{
+    display:flex;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+.attribution { 
+    font-size: 12px;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px){
+    .container{
+        width:776px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .main{
+        grid-template-columns:1fr 1fr;
+    }
+    .main > div{
+        width:360px;
+    }
+}
+@media screen and (min-width:1140px){
+    .container{
+        width:1160px;
+    }
+    .main{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .supervisor{
+        grid-row: 2/4 ;
+    }
+    .team-builder{
+        grid-row: 1/3 ;
+    }
+    .karma{
+        grid-row: 3/5 ;
+    }
+    .calculator{
+        grid-row: 2/4 ;
+    }
+}
