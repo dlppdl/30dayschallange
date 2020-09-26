@@ -45,6 +45,7 @@ body{
 }
 .subscription{
     background-color: var(--cyan);
+    border-radius: 0 0 0 10px;
 }
 .subs-title{
     color: #fff;
@@ -86,6 +87,7 @@ body{
 }
 .why{
     background-color: var(--light-cyan);
+    border-radius: 0 0 10px 0;
 }
 ul{
     padding-inline-start: 0;
@@ -106,6 +108,12 @@ ul{
     .container{
         display: flex;
         flex-direction: column;
+    }
+    .subscription{
+        border-radius:0;
+    }
+    .why{
+        border-radius:0 0 10px 10px;
     }
 }
 
