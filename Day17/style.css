@@ -56,22 +56,22 @@ body{
 }
 .main > div{
     border-radius: .75rem;
-    box-shadow: 0 0 5px #aaa;
+    box-shadow: 0px 10px 20px #bbb;
     padding: 2rem;
     width: 340px;
     border-top: 0.25rem solid;
 }
 .main .supervisor{
-    border-top-color: var(--cyan);
+    border-color: var(--cyan);
 }
 .main .team-builder{
-    border-top-color: var(--red);
+    border-color: var(--red);
 }
 .main .karma{
-    border-top-color: var(--orange);
+    border-color: var(--orange);
 }
 .main .calculator{
-    border-top-color: var(--blue);
+    border-color: var(--blue);
 }
 .icon{
     display:flex;
