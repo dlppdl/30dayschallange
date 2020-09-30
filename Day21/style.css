@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    width: 360px;
+    height: 580px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: color 50ms ease-in;
+}
+.item img{
+    transition: all 200ms ease-in;
+}
+.content{
+    padding: 0 1.5rem;
+    height: 260px;
+    background-color: #fff;
+}
+.category{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    color: #4cd964;
+    transition: all 200ms ease-in;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    letter-spacing: -1px;
+    color: #1b1b1b;
+    transition: font-size 50ms ease-in;
+}
+.description{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+    color: #9b9b9b;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #eaeaea;
+    font-family: 'Roboto', sans-serif;
+    font-size: .875rem;
+    color: #9b9b9b;
+}
+.footer span{
+    margin-right: 1rem;
+}
+.footer span i {
+    margin-right: .25rem;
+}
+.footer a{
+    text-decoration: none;
+    color: #9b9b9b;
+}
+
+/* Active Focus States For Whole Container */
+.item:hover {
+    background-color: #000;
+}
+.item:hover img{
+    position: relative;
+    transform: translateY(20px);
+}
+.item:hover .content{
+    background-color: #000;
+}
+.item:hover .category{
+    color: #fff;
+    position: absolute;
+    transform: translateY(-260px);
+}
+.item:hover .title{
+    font-size: 2.25rem;
+    color: #fff;
+    margin: 1.5rem auto;
+}
+.item:hover .description,
+.item:hover .footer,
+.item:hover .footer a{
+    background-color: #000;
+    color:#fff;
+}
