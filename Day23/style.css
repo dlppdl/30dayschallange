@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas:
+        "img1 item1 img3"
+        "item2 img2 item3";
+    text-align: center;
+}
+.container > div{
+    max-width: 480px;
+    height: 480px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img1{
+    grid-area: img1;
+}
+.item1{
+    grid-area:item1;
+}
+.item2{
+    grid-area:item2;
+}
+.item3{
+    grid-area:item3;
+}
+.container  .item1,
+.container  .item2,
+.container  .item3{
+    position: relative;
+    padding: 1rem 2.5rem;
+    overflow: visible;
+}
+.menu-item,
+.title{
+    font-family: 'Montserrat', sans-serif;
+}
+.description,
+.item-number{
+    font-family: 'Playfair Display', serif;
+}
+.menu-item{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.8px;
+    color: #008582;
+}
+.title{
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    color: #202020;
+}
+.description{
+    font-size: 18px;
+    line-height: 30px;
+    color: #777777;
+}
+.item-number{
+    font-size: 18px;
+    color: #202020;
+}
+.item1::before,
+.item2::before,
+.item3::before{
+    content: '';
+    background-color: #fff;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: 100;
+}
+.item1::before{
+    left: -12px;
+    top: 50px;
+}
+.item2::before{
+    right: -12px;
+    top: 50px;
+}
+.item3::before{
+    left: 50px;
+    top: -12px;
+}
+@media screen and (max-width:1200px){
+    .container{
+        grid-template-columns: repeat(2,auto);
+        grid-template-areas:
+            "img1 item1"
+            "item2 img2"
+            "img3 item3";
+    }
+    .item3::before{
+        left: -12px;
+        top: 50px;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        grid-template-columns: repeat(1,auto);
+        grid-template-areas:
+            "item1"
+            "img1"
+            "item2"
+            "img2"
+            "item3"
+            "img3";
+    }
+    .item1::before,
+    .item2::before,
+    .item3::before{
+    top:468px;
+    left: 50%;
+    }
+}
