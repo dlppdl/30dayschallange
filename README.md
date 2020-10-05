@@ -33,3 +33,4 @@
 | Day 23  | [Food Menu](https://dlppdl.github.io/100dayschallange/Day23)|
 | Day 24  | [FizzBuzz Solution](https://dlppdl.github.io/100dayschallange/Day24)|
 | Day 25  | [Gear VR Landing Page](https://dlppdl.github.io/100dayschallange/Day25)|
+| Day 26  | [FizzBuzz Solution But Different](https://dlppdl.github.io/100dayschallange/Day26)|
