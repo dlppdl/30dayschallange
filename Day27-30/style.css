@@ -65,13 +65,9 @@ body{
 
 @media screen and (max-width:768px){
     /* Hamburger Menu for Mobile View */
-    .navigation{
-        display: none;
-    }
+    .navigation,
+    .mobile-nav,
     .active{
-        display: none;
-    }
-    .mobile-nav{
         display: none;
     }
     .ham-menu{
@@ -104,18 +100,18 @@ body{
         z-index: 100;
         padding-top: 2rem;
     }
-    .checkbox:checked ~ .mobile-nav .list-item{
+    .mobile-nav .list-item{
         color: #fff;
         margin-left: 0;
         font-size: 1.5rem;
     }
-    .checkbox:checked ~ .mobile-nav .plan{
+    .mobile-nav .plan{
         border:2px solid #fff;
         width: 70vw;
         text-align: center;
         margin-top: 1rem;
     }
-    .checkbox:checked ~ .mobile-nav .plan:hover,
+    .plan:hover,
     .plan:focus,
     .plan:active{
         color: var(--very-dark-violet);
@@ -131,18 +127,23 @@ body{
 .banner >div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 2rem;
     padding: 5rem 1rem;
     color: #fff;
 }
 .dang{
-    grid-row: 1/3;
+    grid-row: 1/4;
 }
 .banner .image{
     background: url(./img/image-intro-desktop.jpg) no-repeat;
     background-size: contain;
-    grid-row:1/4;
+    grid-row:1/6;
+}
+.banner .image img{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
 }
 .dang hr{
     width: 160px;
@@ -181,29 +182,32 @@ body{
         max-height: 100%;
     }
     .banner >div {
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
-        padding: 0 1rem 2rem;
-        grid-row-gap: 2rem;
-    }
-    .banner .dang{
-        grid-row: 2;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
     }
     .banner .image{
-        grid-row: 1;
+        height: 828px;
     }
+    .dang hr{
+        display: none;
+    }
+
 }
 @media screen and (max-width:768px){
     .banner >div{
-        grid-template-rows: 1.5fr 1fr;
         text-align: center;
     }
-    .dang hr{
-        margin: auto;
-    }
     .banner .image{
-        background: url(./img/image-intro-mobile.jpg) no-repeat;
+        background: none;
         background-size: contain;
+        height: 100%;
+    }
+    .banner .image img{
+        opacity: 1;
+    }
+    .banner{
+        margin-bottom: 5rem;
     }
 }
 @media screen and (max-width:576px){
@@ -259,11 +263,12 @@ body{
 
 /* How We work section */
 .how{
+    background: url(./img/bg-pattern-how-we-work-desktop.svg) top right no-repeat, var(--dark-violet);
+    background-size: contain;
     display: flex;
     justify-content: space-between;
     padding:5rem;
     margin:5rem 0 10rem;
-    background: var(--dark-violet);
     color: #fff;
 }
 .how .heading{
@@ -303,6 +308,7 @@ body{
 }
 @media screen and (max-width:768px){
     .how{
+        background: url(./img/bg-pattern-how-we-work-mobile.svg) top right no-repeat, var(--dark-violet);
         padding: 5rem 1rem;
     }
     .how .heading{
@@ -312,10 +318,10 @@ body{
 }
 
 
-/* Footer */
+/* Footer Section*/
 footer{
-    background: var(--very-light-gray);
-    padding-top:5rem;
+    background:url(./img/bg-pattern-footer-desktop.svg) top left no-repeat, var(--very-light-gray);
+    padding-top:3rem;
     padding-bottom:5rem;
 }
 .footer-top{
@@ -362,6 +368,7 @@ footer{
 }
 @media screen and (max-width:768px){
     footer{
+        background:url(./img/bg-pattern-footer-mobile.svg) top left no-repeat, var(--very-light-gray);
         font-size: 1.25rem;
     }
     .footer-top{
