@@ -42,15 +42,15 @@ body{
     color: var(--dark-grayish-violet);
     font-weight: 700;
 }
+.list-item:hover,
+.list-item:focus,
+.list-item:active{
+    color: var(--dark-violet);
+}
 .plan {
     display: inline-block;
     border: 2px solid var(--dark-violet);
     padding: 1rem 2rem;
-    color: var(--dark-violet);
-}
-.list-item:hover,
-.list-item:focus,
-.list-item:active{
     color: var(--dark-violet);
 }
 .plan:hover,
@@ -59,14 +59,16 @@ body{
     color: var(--very-light-gray);
     background-color: var(--dark-violet);
 }
-.ham-menu{
+.not-for-desktop{
     display: none;
 }
 
 @media screen and (max-width:768px){
     /* Hamburger Menu for Mobile View */
+    .not-for-desktop{
+        display: block;
+    }
     .navigation,
-    .mobile-nav,
     .active{
         display: none;
     }
@@ -75,10 +77,10 @@ body{
         align-items: center;
     }
     .checkbox{
+        position: absolute;
         width: 32px;
         height: 32px;
         opacity: 0;
-        position: absolute;
     }
     .checkbox:checked ~ .default{
         display: none;
@@ -86,9 +88,10 @@ body{
     .checkbox:checked  ~ .active{
         display: block;
     }
-    .checkbox:checked ~ .mobile-nav{
+    .checkbox:checked ~ .navigation{
+        background: url(./img/bg-pattern-mobile-nav.svg) bottom center no-repeat,var(--very-dark-violet);
+        background-size: contain;
         position: absolute;
-        background-color: var(--very-dark-violet);
         list-style: none;
         display: flex;
         flex-direction: column;
@@ -100,12 +103,12 @@ body{
         z-index: 100;
         padding-top: 2rem;
     }
-    .mobile-nav .list-item{
+    .navigation .list-item{
         color: #fff;
         margin-left: 0;
         font-size: 1.5rem;
     }
-    .mobile-nav .plan{
+    .navigation .plan{
         border:2px solid #fff;
         width: 70vw;
         text-align: center;
@@ -118,6 +121,7 @@ body{
         background-color: #fff;
     }
 }
+
 /* Banner Section */
 .banner{
     background: var(--dark-violet);
@@ -126,8 +130,8 @@ body{
 }
 .banner >div{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-column-gap: 2rem;
     padding: 5rem 1rem;
     color: #fff;
@@ -141,9 +145,9 @@ body{
     grid-row:1/6;
 }
 .banner .image img{
-    opacity: 0;
     height: 100%;
     width: 100%;
+    opacity: 0;
 }
 .dang hr{
     width: 160px;
@@ -169,6 +173,8 @@ body{
     font-weight: 700;
     padding: .5rem 1.5rem;
     letter-spacing: 0.4px;
+    position: relative;
+    z-index: 1000;
 }
 .dang .button:hover,
 .dang .button:focus,
@@ -195,33 +201,32 @@ body{
 
 }
 @media screen and (max-width:768px){
+    .banner{
+        margin-bottom: 5rem;
+    }
     .banner >div{
         text-align: center;
     }
     .banner .image{
         background: none;
-        background-size: contain;
         height: 100%;
     }
     .banner .image img{
         opacity: 1;
-    }
-    .banner{
-        margin-bottom: 5rem;
     }
 }
 @media screen and (max-width:576px){
     .banner .image{
         margin-left:  -1rem;
         margin-right:  -1rem;
-        background-size: contain;
     }
 }
+
 /* We are Different Section */
 .who hr{
     width: 160px;
 }
-.who > div{
+.feature-list{
     display: flex;
 }
 .feature{
@@ -252,7 +257,7 @@ body{
     .who hr{
         margin: auto;
     }
-    .who > div{
+    .feature-list{
         flex-direction: column;
         align-items: center;
     }
@@ -317,7 +322,6 @@ body{
     }
 }
 
-
 /* Footer Section*/
 footer{
     background:url(./img/bg-pattern-footer-desktop.svg) top left no-repeat, var(--very-light-gray);
@@ -356,16 +360,17 @@ footer{
     font-weight: 700;
     color: var(--dark-violet);
 }
-.sitemap-link:hover,
-.sitemap-link:focus,
-.sitemap-link:active{
-    text-decoration: underline;
-}
 .sitemap-header{
     cursor: default;
     margin: 3rem 0 2rem;
     color: var(--dark-grayish-violet);
 }
+.sitemap-link:hover,
+.sitemap-link:focus,
+.sitemap-link:active{
+    text-decoration: underline;
+}
+
 @media screen and (max-width:768px){
     footer{
         background:url(./img/bg-pattern-footer-mobile.svg) top left no-repeat, var(--very-light-gray);
@@ -380,7 +385,6 @@ footer{
         text-align: center;
     }
 }
-
 
 /* Container Media Queries */
 @media screen and (min-width:1200px){
