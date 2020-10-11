@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: auto;
+}
+.term .heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    line-height: 82px;
+    letter-spacing: -4px;
+    font-weight: 600;
+    color: #1b1b1b;
+    max-width: 300px;
+}
+.term .description{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #9b9b9b;
+    max-width:380px;
+
+}
+.description .mail{
+    font-weight: 700;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 280px;
+    border-radius: 30px;
+    border: 1px solid #5736B8;
+    color: #5736B8;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    outline: none;
+}
+.button:hover,
+.button:active,
+.button:focus{
+    background: #5736B8;
+    color: #fff;
+}
+.button:hover .text,
+.button:active .text,
+.button:focus .text{
+    border-right: 1px solid;
+}
+.button:active,
+.button:focus{
+    box-shadow: 0 0 0 2px #fff,
+                0 0 0 5px #5736B8;
+}
+.button .text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    border-right: 1px solid;
+}
+.image{
+    background: #c4c4c4c4;
+    border-radius: 50%;
+}
+@media screen and (max-width:992px){
+    .container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .term .heading,
+    .term .description{
+        margin-top: 2rem;
+        max-width: 100%;
+    }
+    .button{
+        margin: 3rem auto;
+    }
+
+}
+/* Container Media Queries */
+@media screen and (min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    .container{
+        max-width: 960px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+}
+@media screen and (max-width:576px){
+    .container{
+        max-width: 100%;
+    }
+}
