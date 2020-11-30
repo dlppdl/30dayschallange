@@ -1,9 +1,5 @@
 # 100DaysOfCode
 
-## Tweet about commitment
-
-[![Official Tweet about commitment toward #100DayOfCode](tweet.png)](https://twitter.com/dlppdl00/status/1303897091802935296)
-
 ## My progress
 
 | Day    | Link           |
