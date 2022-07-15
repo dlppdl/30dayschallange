@@ -2,17 +2,17 @@
 
 ## My progress
 
-| Day    | Link           |
-| ------ | -------------- |
-| Day 1  | [404 Error Page](https://dlppdl.github.io/30dayschallange/Day01/)|
-| Day 2  | [Sign up form](https://dlppdl.github.io/30dayschallange/Day02/) |
-| Day 3  | [Blog Card](https://dlppdl.github.io/30dayschallange/Day03/)|
-| Day 4  | [Photography Post](https://dlppdl.github.io/30dayschallange/Day04/)|
-| Day 5  | [Sticky Social Share](https://dlppdl.github.io/30dayschallange/Day05/)|
-| Day 6  | [Blog Page](https://dlppdl.github.io/30dayschallange/Day06/)|
-| Day 7  | [Footer Design](https://dlppdl.github.io/30dayschallange/Day07)|
-| Day 8  | [Review Modal](https://dlppdl.github.io/30dayschallange/Day08)|
-| Day 9  | [Profile Card](https://dlppdl.github.io/30dayschallange/Day09)|
+| Day     | Link           |
+| ------- | -------------- |
+| Day 01  | [404 Error Page](https://dlppdl.github.io/30dayschallange/Day01/)|
+| Day 02  | [Sign up form](https://dlppdl.github.io/30dayschallange/Day02/) |
+| Day 03  | [Blog Card](https://dlppdl.github.io/30dayschallange/Day03/)|
+| Day 04  | [Photography Post](https://dlppdl.github.io/30dayschallange/Day04/)|
+| Day 05  | [Sticky Social Share](https://dlppdl.github.io/30dayschallange/Day05/)|
+| Day 06  | [Blog Page](https://dlppdl.github.io/30dayschallange/Day06/)|
+| Day 07  | [Footer Design](https://dlppdl.github.io/30dayschallange/Day07)|
+| Day 08  | [Review Modal](https://dlppdl.github.io/30dayschallange/Day08)|
+| Day 09  | [Profile Card](https://dlppdl.github.io/30dayschallange/Day09)|
 | Day 10  | [Upload File](https://dlppdl.github.io/30dayschallange/Day10)|
 | Day 11  | [User Profile](https://dlppdl.github.io/30dayschallange/Day11)|
 | Day 12  | [Another 404 Error Page](https://dlppdl.github.io/30dayschallange/Day12)|
@@ -29,4 +29,6 @@
 | Day 23  | [Food Menu](https://dlppdl.github.io/30dayschallange/Day23)|
 | Day 24  | [FizzBuzz Solution](https://dlppdl.github.io/30dayschallange/Day24)|
 | Day 25  | [Gear VR Landing Page](https://dlppdl.github.io/30dayschallange/Day25)|
-| Day 26  | [FizzBuzz Solution But Different](https://dlppdl.github.io/30dayschallange/Day26)|
+| Day 26  | [FizzBuzz Solution With Animation](https://dlppdl.github.io/30dayschallange/Day26)|
+| Day 26  | [Terms of Service](https://dlppdl.github.io/30dayschallange/Day27)|
+|Day 28-30| [Insure Landing Page](https://dlppdl.github.io/30dayschallange/Day28-30)|
