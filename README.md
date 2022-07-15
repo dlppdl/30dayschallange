@@ -30,5 +30,5 @@
 | Day 24  | [FizzBuzz Solution](https://dlppdl.github.io/30dayschallange/Day24)|
 | Day 25  | [Gear VR Landing Page](https://dlppdl.github.io/30dayschallange/Day25)|
 | Day 26  | [FizzBuzz Solution With Animation](https://dlppdl.github.io/30dayschallange/Day26)|
-| Day 26  | [Terms of Service](https://dlppdl.github.io/30dayschallange/Day27)|
+| Day 27  | [Terms of Service](https://dlppdl.github.io/30dayschallange/Day27)|
 |Day 28-30| [Insure Landing Page](https://dlppdl.github.io/30dayschallange/Day28-30)|
