@@ -1,4 +1,4 @@
-# 100DaysOfCode
+# 30DaysOfCode
 
 ## My progress
 
